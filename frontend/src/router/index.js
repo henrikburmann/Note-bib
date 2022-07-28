@@ -6,6 +6,12 @@ const routes = [
     name: "RegisterSheet",
     component: () => import("../views/RegisterSheetView.vue"),
   },
+
+  {
+    path: "/sheetSearch",
+    name: "SheetSearch",
+    component: () => import("../views/SheetSearchView.vue"),
+  }
 ];
 
 const router = createRouter({

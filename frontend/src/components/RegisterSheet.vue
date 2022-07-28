@@ -8,24 +8,23 @@
 
   <form v-on:submit.prevent>
     <div class="mb-3 input">
-      <label for="exampleInputPassword1" class="form-label"
+      <label for="musicalWorkTitle" class="form-label"
         >Musikalt verk</label
       >
 
-      <input @input="updateMusicalWorkList" v-model="searchedMusicalWork" />
-      <select
-        v-model="musicalWorkId"
-        class="form-select"
+      <input @input="updateMusicalWorkList" v-model="searchedMusicalWork" id="musicalWorkTitle" autocomplete=0 />
+      <ul
+        class=""
         aria-label="Default select example"
       >
-        <option
+        <li
           v-for="m in musicalWorks"
           :key="m.musicalWorksId"
           :value="m.musicalWorksId"
         >
           {{ m.title }}
-        </option>
-      </select>
+        </li>
+      </ul>
     </div>
     <div>
       <button @click="openNewMusicalWork">Opprett ny</button>
@@ -36,7 +35,6 @@
         v-model="arrTitle"
         type="text"
         class="form-control"
-        id="exampleInputPassword1"
       />
     </div>
     <div class="mb-3 input">
@@ -45,11 +43,10 @@
         v-model="musicalForm"
         type="text"
         class="form-control"
-        id="exampleInputPassword1"
       />
     </div>
     <div class="mb-3 input">
-      <label for="exampleInputPassword1" class="form-label"
+      <label class="form-label"
         >Intrumentbeskrivelse</label
       >
       <input
@@ -127,6 +124,10 @@ import NewMusicalWork from "./basecomponents/NewMusicalWork.vue";
 import { getAllFormats } from "@/utils/formatUtil";
 import { postSheetMusic } from "@/utils/SheetMusicUtil";
 import { getMusicalWorksByTitle } from "@/utils/MusicalWorkUtil";
+
+document.addEventListener('click', ev => {
+  alert(ev.target.tagName);
+})
 export default {
   name: "RegisterSheet",
 
@@ -147,7 +148,6 @@ export default {
       publisher: "",
       musicalWorkId: null,
       formatId: null,
-
       newMusicalWork: false,
       formats: [],
       musicalWorks: [],
@@ -208,6 +208,7 @@ export default {
     async getFormats() {
       this.formats = await getAllFormats();
     },
+    
   },
   async beforeMount() {
     await this.getFormats();
