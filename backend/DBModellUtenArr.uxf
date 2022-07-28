@@ -1,0 +1,46 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>340</x><y>350</y><w>210</w><h>230</h></coordinates><panel_attributes>Sheet_music
+--
+note_id {PK}
+reg_by_user
+description
+archive_key
+scanned_doc
+arr_title
+musical_form
+voices_description
+original_arr
+arranged_date
+pub_date
+main_key
+publisher
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>10</x><y>120</y><w>200</w><h>70</h></coordinates><panel_attributes>lt=.
+musical_works_titles
+-
+main_title
+title
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>270</x><y>100</y><w>210</w><h>130</h></coordinates><panel_attributes>Musical_works
+--
+musical_works_id {PK}
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>200</x><y>140</y><w>90</w><h>40</h></coordinates><panel_attributes></panel_attributes><additional_attributes>70;20;10;20</additional_attributes></element><element><id>Text</id><coordinates><x>580</x><y>130</y><w>40</w><h>20</h></coordinates><panel_attributes>1..1
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>210</x><y>130</y><w>40</w><h>20</h></coordinates><panel_attributes>0..*
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>620</x><y>90</y><w>210</w><h>70</h></coordinates><panel_attributes>Composer
+--
+composer_id{PK}
+name
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>470</x><y>140</y><w>280</w><h>40</h></coordinates><panel_attributes></panel_attributes><additional_attributes>260;20;10;20</additional_attributes></element><element><id>Text</id><coordinates><x>10</x><y>10</y><w>40</w><h>20</h></coordinates><panel_attributes>0..*
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>10</x><y>50</y><w>40</w><h>20</h></coordinates><panel_attributes>1..1
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>490</x><y>130</y><w>40</w><h>20</h></coordinates><panel_attributes>0..*
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>240</x><y>170</y><w>40</w><h>20</h></coordinates><panel_attributes>1..1
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>560</x><y>510</y><w>210</w><h>70</h></coordinates><panel_attributes>Format
+--
+format_id{PK}
+name
+description
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>540</x><y>460</y><w>140</w><h>70</h></coordinates><panel_attributes></panel_attributes><additional_attributes>120;50;120;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>650</x><y>290</y><w>210</w><h>90</h></coordinates><panel_attributes>User
+--
+user_id{PK}
+user_name
+hashed_password
+salt
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>540</x><y>340</y><w>130</w><h>40</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;20;110;20</additional_attributes></element><element><id>Relation</id><coordinates><x>390</x><y>220</y><w>30</w><h>150</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;130;10;10</additional_attributes></element></diagram>

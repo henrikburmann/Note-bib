@@ -1,11 +1,11 @@
-<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><help_text>Space for diagram notesption</help_text><element><id>UMLClass</id><coordinates><x>350</x><y>350</y><w>210</w><h>120</h></coordinates><panel_attributes>Sheet_music
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><help_text>Space for diagram notesption</help_text><element><id>UMLClass</id><coordinates><x>330</x><y>340</y><w>210</w><h>120</h></coordinates><panel_attributes>Sheet_music
 --
 note_id {PK}
 reg_by_user
 description
 archive_key
 scanned_doc
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>80</x><y>330</y><w>210</w><h>160</h></coordinates><panel_attributes>Arrangements
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>60</x><y>320</y><w>210</w><h>160</h></coordinates><panel_attributes>Arrangements
 --
 arrangement_id{PK}
 arr_title
@@ -16,34 +16,34 @@ arranged_date
 pub_date
 main_key
 publisher
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>20</x><y>120</y><w>200</w><h>70</h></coordinates><panel_attributes>lt=.
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>110</y><w>200</w><h>70</h></coordinates><panel_attributes>lt=.
 musical_works_titles
 -
 main_title
 title
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>280</x><y>100</y><w>210</w><h>130</h></coordinates><panel_attributes>Musical_works
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>260</x><y>90</y><w>210</w><h>130</h></coordinates><panel_attributes>Musical_works
 --
 musical_works_id {PK}
 
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>210</x><y>140</y><w>90</w><h>40</h></coordinates><panel_attributes></panel_attributes><additional_attributes>70;20;10;20</additional_attributes></element><element><id>Text</id><coordinates><x>590</x><y>130</y><w>40</w><h>20</h></coordinates><panel_attributes>1..1
-style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>220</x><y>130</y><w>40</w><h>20</h></coordinates><panel_attributes>0..*
-style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>630</x><y>90</y><w>210</w><h>70</h></coordinates><panel_attributes>Composer
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>190</x><y>130</y><w>90</w><h>40</h></coordinates><panel_attributes></panel_attributes><additional_attributes>70;20;10;20</additional_attributes></element><element><id>Text</id><coordinates><x>570</x><y>120</y><w>40</w><h>20</h></coordinates><panel_attributes>1..1
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>200</x><y>120</y><w>40</w><h>20</h></coordinates><panel_attributes>0..*
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>610</x><y>80</y><w>210</w><h>70</h></coordinates><panel_attributes>Work_creater
 --
 composer_id{PK}
 name
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>480</x><y>140</y><w>280</w><h>40</h></coordinates><panel_attributes></panel_attributes><additional_attributes>260;20;10;20</additional_attributes></element><element><id>Text</id><coordinates><x>20</x><y>10</y><w>40</w><h>20</h></coordinates><panel_attributes>0..*
-style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>20</x><y>50</y><w>40</w><h>20</h></coordinates><panel_attributes>1..1
-style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>500</x><y>130</y><w>40</w><h>20</h></coordinates><panel_attributes>0..*
-style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>250</x><y>170</y><w>40</w><h>20</h></coordinates><panel_attributes>1..1
-style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>220</y><w>120</w><h>130</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;110;10;10;100;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>570</x><y>510</y><w>210</w><h>70</h></coordinates><panel_attributes>Format
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>460</x><y>130</y><w>280</w><h>40</h></coordinates><panel_attributes></panel_attributes><additional_attributes>260;20;10;20</additional_attributes></element><element><id>Text</id><coordinates><x>0</x><y>0</y><w>40</w><h>20</h></coordinates><panel_attributes>0..*
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>0</x><y>40</y><w>40</w><h>20</h></coordinates><panel_attributes>1..1
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>480</x><y>120</y><w>40</w><h>20</h></coordinates><panel_attributes>0..*
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>230</x><y>160</y><w>40</w><h>20</h></coordinates><panel_attributes>1..1
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>160</x><y>210</y><w>120</w><h>130</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;110;10;10;100;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>550</x><y>500</y><w>210</w><h>70</h></coordinates><panel_attributes>Format
 --
 format_id{PK}
 name
 description
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>550</x><y>460</y><w>140</w><h>70</h></coordinates><panel_attributes></panel_attributes><additional_attributes>120;50;120;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>280</x><y>370</y><w>90</w><h>40</h></coordinates><panel_attributes></panel_attributes><additional_attributes>70;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>660</x><y>290</y><w>210</w><h>90</h></coordinates><panel_attributes>User
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>530</x><y>450</y><w>140</w><h>70</h></coordinates><panel_attributes></panel_attributes><additional_attributes>120;50;120;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>260</x><y>360</y><w>90</w><h>40</h></coordinates><panel_attributes></panel_attributes><additional_attributes>70;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>640</x><y>280</y><w>210</w><h>90</h></coordinates><panel_attributes>User
 --
 user_id{PK}
 user_name
 hashed_password
 salt
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>550</x><y>340</y><w>130</w><h>40</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;20;110;20</additional_attributes></element></diagram>
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>530</x><y>330</y><w>130</w><h>40</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;20;110;20</additional_attributes></element></diagram>
